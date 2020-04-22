@@ -1,0 +1,61 @@
+body{
+    padding: 16px;
+    margin-right: 32px;
+    margin-left:32px;    
+}
+
+.title {  
+   text-align: center;
+}
+
+.titleText {
+    font: bolder small-caps 15px/30px Roboto;
+    display:inline-flex;
+    letter-spacing: 7.2px;
+    color: #000000;
+    opacity: 1;
+  }
+
+.content1{
+    padding: 8px;
+    background-color:#EEEEEE;
+    margin-bottom: 0px;
+  }
+
+.content2{
+  margin-top: 0px;
+ padding-top: 20px;
+ padding-bottom: 24px;
+}
+
+.content-center{
+  text-align: center;
+}
+ 
+ul{
+    text-align: center;
+}
+.lineBreak{ 
+    padding:16px ;
+}
+
+label{
+  font-weight: bold;
+}
+
+.button{
+  background-color:springgreen;
+  color: white;
+  font-weight: bold;
+  width: 30%;
+  border:1px solid white;
+}
+
+#close_icon{
+  vertical-align: middle;
+  float: right;
+  margin-right: -40px;
+  margin-top: -10px;
+  cursor: pointer;
+
+}

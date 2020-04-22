@@ -1,0 +1,49 @@
+<body>
+  <div mat-dialog-title class="title">
+    <h2 class="titleText" >PATIENT INFORMATION</h2>
+    <mat-icon id="close_icon" mat-dialog-close>close</mat-icon>
+    <hr style="width: 15%;background-color: blue;height: 3px;margin-top: 2px;">
+  </div>
+
+  <div mat-dialog-content >
+    <div class="content1 content-center" #content1>
+      <ul style="list-style-type: none;">
+        <li><mat-icon style="color: green;">check</mat-icon><li>
+        <li><label>Response : 51</label></li>
+        <li>Health Card passed validation</li>
+      </ul>
+    </div>
+    <div class="content2" #content2>
+      <span style="float: left;">
+        <label>HealthCard #:</label>
+        {{data.healthCardNumber}}
+      </span>
+      <span style="float: right;">
+        <label> Card Expiry Date #: </label>
+        {{data.cardExpiryDate}}
+      </span>
+    </div>
+    <hr> 
+    <div class="content-center" #content3>
+      <ul style="list-style-type: none;">
+        <li>
+          <label> Name:</label>&nbsp;&nbsp;
+          {{data.name}}
+        </li>
+        <li>
+          <label>Gender:</label>
+          {{data.gender}}&nbsp; &nbsp;&nbsp;
+          <label>DOB:</label>
+          {{data.DOB}}
+        </li>
+      </ul>
+    </div>
+    <hr>
+    <div class="content-center" #content4>
+      <p>This patient does not exist in the records</p>
+    </div>
+  </div>
+  <div mat-dialog-footer class="content-center">
+    <button mat-button  [mat-dialog-close]="data" class="button" (click)="addPatient()" >ADD PATIENT</button>
+  </div>
+<body>
