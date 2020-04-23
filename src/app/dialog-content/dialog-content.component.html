@@ -1,3 +1,4 @@
+<!----
 <body>
   <div mat-dialog-title class="title">
     <h2 class="titleText" >PATIENT INFORMATION</h2>
@@ -47,3 +48,63 @@
     <button mat-button  [mat-dialog-close]="data" class="button" (click)="addPatient()" >ADD PATIENT</button>
   </div>
 <body>
+----->
+
+<!----- Responsive Dialog ----->
+<div class="container">
+  <div class="row justify-content-lg-end ">
+    <div class="col-10 col-lg-8 offset-lg-3 fo">
+      <p class="titleText" >PATIENT INFORMATION</p>
+      <hr class="hr1">
+    </div>
+    <div class="col-2 col-lg-1 fo" >
+      <mat-icon id="close_icon" mat-dialog-close>close</mat-icon>
+    </div>
+  </div>
+  <div class="row my-row justify-content-start ">
+    <div class="col-md-12  col-lg-9 offset-lg-1" >
+      <ul style="list-style-type: none;text-align: center;">
+        <li><mat-icon style="color: green;">check</mat-icon><li>
+        <li><label>Response : 51</label></li>
+        <li>Health Card passed validation</li>
+      </ul>
+  </div>
+  </div>
+  <hr>
+    <div class=" row justify-content-lg-between ">
+      <div class=" col-lg-4 fo">
+        <label>HealthCard #:</label>
+        {{data.healthCardNumber}}
+      </div>
+      <div class="col-lg-4 fo">
+        <label> Card Expiry Date #: </label>
+        {{data.cardExpiryDate}}
+      </div>
+    </div>
+    <hr>
+    <div class="row justify-content-start ">
+      <div class=" col-lg-9 offset-lg-3" >
+      <ul style="list-style-type: none;">
+        <li>
+          <label> Name:</label>&nbsp;&nbsp;
+          {{data.name}}
+        </li>
+        <li>
+          <label>Gender:</label>
+          {{data.gender}}&nbsp; &nbsp;&nbsp;
+          <label>DOB:</label>
+          {{data.DOB}}
+        </li>
+      </ul>
+    </div>
+    </div>
+    <hr>
+    <div class="content-center" #content4>
+      <p class="fo">This patient does not exist in the records</p>
+    </div>
+    <div mat-dialog-footer class="content-center">
+      <button mat-button  [mat-dialog-close]="data" class="button" (click)="addPatient()" >ADD PATIENT</button>
+    </div>
+
+
+</div>
